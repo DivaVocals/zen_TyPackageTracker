@@ -3,7 +3,7 @@ Ty Package Tracker for Zen Cart v3.1.4
 
 Changelog
 ---------------
- <p>version 3.1.4 - 09/17/2013</p>
+<p>Version 3.1.4 - 09/17/2013</p>
 <ul>
 <li>Updated tracking entry code (lhungil)</li>
 <li>Another fix to the sidebox code to HTML fix validation errors (colosports)</li>
