@@ -1,0 +1,442 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+  <meta name="ROBOTS" content="nofollow,noindex">  
+  <meta name="ROBOTS" content="noarchive">  
+  <meta http-equiv="pragma" content="no-cache">  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">  
+  <meta http-equiv="content-language" content="en">  
+  <meta name="description" content="This module add the ability for your customers and admin to tracking packages from different carriers.">
+  <title>Ty Package Tracker v3.1.3</title>
+    
+  <link rel="stylesheet" type="text/css" href="includes/css/stylesheet.css">  
+  <script type="text/javascript" src="includes/jscript/jscript_tabs.js"></script></head><body>
+<div id="wrapper">
+<h2>Ty Package Tracker v3.1.3</h2>
+
+<p>Support thread: <a href="http://www.zen-cart.com/forum/showthread.php?t=36126" target="_blank">http://www.zen-cart.com/forum/showthread.php?t=36126</a><br>
+Download link: <a href="http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=167" target="_blank">http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=167</a></p>
+
+<div id="slidetabsmenu" style="display: none;">
+<ul>
+  <li> <a onClick="expandcontent('sc1', this)" href="javascript:void(0)"><span>Purpose &amp; Aim</span></a></li>
+  <li> <a onClick="expandcontent('sc2', this)" href="javascript:void(0)"><span>Installation</span></a></li>
+  <li> <a onClick="expandcontent('sc3', this)" href="javascript:void(0)"><span>How to Use</span></a></li>
+  <li> <a onClick="expandcontent('sc4', this)" href="javascript:void(0)"><span>Integration With Other Modules</span></a></li>
+  <li> <a onClick="expandcontent('sc5', this)" href="javascript:void(0)"><span>Credits &amp; History</span></a></li>
+  <li> <a onClick="expandcontent('sc6', this)" href="javascript:void(0)"><span>Files</span></a></li>
+  <li> <a onClick="expandcontent('sc7', this)" href="javascript:void(0)"><span>License</span></a></li>
+</ul>
+</div>
+<br style="clear: both;">
+
+<!--Begin tabcontainer-->
+<div id="tabcontentcontainer">
+
+<!--Begin sc1-->
+<div class="tabcontent" id="sc1" style="display: block;">
+<div class="textcontent">
+<h3>PURPOSE &amp; AIM</h3>
+
+<div class="regularlist">
+<ul>
+	<li>This module adds the ability for your customers and admin to track packages from different carriers.<br>
+	By default the carriers included are FedEx, UPS, &amp; USPS</li>
+	<li>Adds a separate sidebox that displays the customer's past orders</li>
+	<li>Customer can track their orders from the sidebox or from the "My Account" page</li>
+	<li>Configurations are done in the Admin Page. You may have up to 5 different carriers. You can change, add, or turn off carrier from this page</li>
+	</ul>
+	</div>
+
+<p><b>!!READ EVERYTHING!!</b></p>
+
+<p>After following the installation instructions, I very strongly recommend you read through the ENTIRE "<strong>How to Use</strong>" section. There you will find out 
+exactly what <strong>Ty Package Tracker</strong> can do.</p>
+
+<p>Ready to get started? Just follow the installation instructions.</p>
+
+<p>Any questions, just hit the forums: http://www.zen-cart.com/forum/showthread.php?t=36126</p>
+
+
+</div>
+</div>
+<!--End sc1-->
+
+<!--Begin sc2-->
+<div class="tabcontent" id="sc2" style="display: block;">
+<div class="textcontent">
+<h3>INSTALLATION</h3>
+
+<p><b>!!!!!BACKUP YOUR STORE BEFORE YOU BEGIN!!!!!</b></p>
+<p>There are three key folders in the fileset</p>
+
+<div class="regularlist">
+<ul>
+	<li>1_Install_Files</li>
+	<li>2_Required_Core_Edits</li>
+	<li>3_Remove_From_Previous_Versions</li>
+</ul>
+</div>
+
+<div class="regularlist">
+<fieldset>
+  <legend>Basic Installation/Upgrade Instructions</legend>
+<ol>
+  <li>Unzip the package contents to a temp directory</li>
+    <li>Rename  the <strong>YOUR_ADMIN_FOLDER</strong> folder in the <strong>1_Install_Files</strong> folder to match the name of your shop's admin folder.. Let me repeat
+  this as this is the one step in module installs that most OFTEN gets overlooked/missed:
+  <br><br>
+  <div class="boldemphasis">Rename the YOUR_ADMIN_FOLDER folders to match the name of your shop's admin folder</div></li>
+  <li>Rename the <strong>YOUR_ADMIN_FOLDER</strong> folders in the <strong>2_Modified_Core_Files</strong> folder to match the name of your store's admin folder<br><br>
+	<div class="emphasis">Because these are core files, they have been separated in the install fileset so they are easily identified. If you have installed any mods which make changes to the files in this folder, you 
+	will need to use a tool like Winmerge or Beyond Compare to incorporate those changes into these files.</div></li>
+  	<li>Log into your store's admin before uploading the files. <div class="emphasis">If you  log into your store after uploading the files, the auto-install will still ocurr, but you will not see the install confimation message. (this is because the auto-install will take place during the login action and the confirmation message will not display during the login process)</div></li>
+
+ 
+  <li>Upload ALL the files in the <strong>1_Install_Files</strong> folder to your store directory. The directory structure within these folders is like your Zen Cart store's folder structure</li>
+
+  <li>Upload files to from <strong>2_Modified_Core_Files</strong> to your store directory. The directory structure within these folders is like your Zen Cart store's folder structure.<br>
+    <br>
+    <div class="emphasis"><strong>IMPORTANT:</strong> If you have <strong>Super Orders v4.x</strong> installed see the &quot;<strong>Integration with Other Modules</strong>&quot; tab BEFORE uploading any of the files in the &quot;<strong>2_Modified_Core_Files</strong>&quot; folder. </div>
+  </li>
+	<li>Once the files are uploaded, click ANY link in your store's admin, and the auto-installer will be triggered. If you have followed the install instructions, you will see the installation confirmation message.</li>
+<li>Go to Admin-&gt;Tools-&gt;Layout Boxes Controller to enable/disable the Previous Orders sidebox.</li>
+</ol>
+
+  <div class="boldemphasis">IMPORTANT: If you have Edit Orders or Super Orders installed see the &quot;Integration with Other Modules&quot; tab for instructions on using Edit Orders or Super Orders with Ty Package Tracker . </div>
+</fieldset>
+
+</div>
+
+<div class="regularlist">
+<fieldset>
+  <legend>Database Modifications</legend>
+<ul>
+<li>Appends 5 fields to the existing TABLE "orders_status_history"</li>
+<li>Add new table to Admin-&gt;Configuration-&gt;Ty Package Tracker (this includes a flag to turn on Ty Package Tracker fields in Edit Orders and/or Super Orders)</li>
+</ul>
+
+
+<p>YOU SHOULD ALWAYS BACKUP YOUR DATABASE WHEN YOU ADD, DELETE, OR UPDATE ANY FIELDS FROM YOUR DATABASE.</p>
+<ul>
+<li>Use "ty_package_tracker_uninstall.sql" if you want to delete all fields from this module from the database.</li>
+</ul>
+</fieldset>
+</div>
+
+<div class="regularlist">
+<fieldset>
+  <legend>Uninstall Instructions</legend>
+<p>YOU SHOULD ALWAYS BACKUP YOUR DATABASE WHEN YOU ADD, DELETE, OR UPDATE ANY FIELDS FROM YOUR DATABASE.</p>
+
+<ol>
+<li>Using a tool like Winmerge or Beyond Compare you will need to carefully modify the files that were updated to install this add-on to remove the Ty Package Tracker code and replace it with 
+the default Zen Cart Code. The files are listed in the section above.</li>
+<li>Use "ty_tracker_package_uninstall.sql" if you want to delete all fields of this module from the database. All tracking id in the database will also be deleted.</li>
+</ol>
+</fieldset>
+</div>
+
+</div>
+</div>
+<!--End sc2-->
+
+<!--Begin sc3-->
+<div class="tabcontent" id="sc3" style="display: block;">
+<div class="textcontent">
+<h3>HOW TO USE</h3>
+
+<div class="regularlist">
+<fieldset>
+  <legend>Configuring Ty Package Tracker</legend>
+<ol>
+<li>Go to Admin-&gt;Configuration-&gt;Ty Package Tracker to configure settings</li>
+<li>Go to Admin-&gt;Customers-&gt;Orders</li>
+<li>Select the desired order</li>
+<li>Add a tracking number in the appropriate input box</li>
+<li>Add comments or change the status. (Required or your tracking information will not be saved!)*</li>
+<li>Click "Update". This will add the tracking number to the database and will also send the customer an e-mail with the tracking id and the link needed to track the package</li>
+<li>Click on the tracking ID to track packages. A separate window will display the tracking information. (Tracking ID will also be display on the Customer's My Account page)</li>
+</ol>
+
+
+<p>*Note: You must add a comment or change the status prior to clicking on the "Update" button or you will get the following warning message:<br>
+"Warning: Nothing to change. The order was not updated."</p>
+
+</fieldset>
+</div>
+<div class="regularlist">
+<fieldset>
+  <legend>Customize/Add New Carriers</legend>
+
+<p>To add new carriers, you will need the carriers tracking link.</p>
+
+<p>Go to Admin-&gt;Configuration-&gt;Ty_Package_Tracker to configure settings.</p>
+
+<p>For each new carrier, you will have to edit 2 fields - the "name" and the "tracking link".</p>
+
+<p>Example: <br>
+If the URL for tracking is http://www.fedex.com/Tracking?action=track&amp;tracknumbers=1234567890<br>
+Omit the actual tracking numbers and use http://www.fedex.com/Tracking?action=track&amp;tracknumbers= as the tracking link.</p>
+</fieldset>
+<fieldset>
+  <legend>Additional Carrier URLs</legend>
+<p>As the community shares carrier URLs, I will update the readme to include them</p>
+<ul>
+<li><strong>Canada Post URL:</strong> https://www.canadapost.ca/cpotools/apps/track/personal/findByTrackNumber?trackingType=on&amp;trackingNumber<br>
+  Shared by windsurfer: http://www.zen-cart.com/showthread.php?36126-Track-Package-from-FedEx-UPS-Postal-DHL-etc&amp;p=1120870#post1120870 </li>
+</ul>
+</fieldset>
+</div>
+<div class="regularlist">
+<fieldset>
+  <legend>Frequently Asked Questions</legend>
+<ol>
+<!--
+<li>I get the following error:<br>
+1054 Unknown column 'track_id1' in 'field list'<br>
+in:<br>
+[select orders_status_id, date_added, customer_notified, track_id1,
+track_id2, track_id3, track_id4, track_id5, comments from
+orders_status_history where orders_id = '1' order by date_added]<br>
+If you were entering information, press the BACK button in your browser
+and re-check the information you had entered to be sure you left no
+blank fields.<br>
+<br>
+-&gt; Check your install. The SQL updates needed to add the Ty Package Tracker table have not been properly run. This indicates that you have an incomplete/incorrect install.&nbsp; See "Installation" tab for
+instructions.</li>
+<li>I get the following error:<br>
+1060 Duplicate column name 'track_id1'<br>
+in:<br>
+[ALTER TABLE orders_status_history ADD track_id1 TEXT, ADD track_id2
+TEXT, ADD track_id3 TEXT, ADD track_id4 TEXT, ADD track_id5 TEXT;]<br>
+If you were entering information, press the BACK button in your browser
+and re-check the information you had entered to be sure you left no
+blank fields.<br>
+<br>
+-&gt; You already had previously install tracker mod.</li>
+-->
+<li>I get the Warning: Nothing to change. The order was not updated.<br>
+<br>
+-&gt; When you add a tracking number, you must either change the order
+status or add a comment in order to update the order with the tracking
+data.</li>
+<li>Is  v3.1.3 backwards compatible with older Zen Cart versions (prior to v1.5)?<br>
+<br>
+-&gt; The short answer is no. Zen Cart v1.5 is VERY different and so is Ty Package Tracker v3.1.3. There is no backwards compatibility support for Zen Cart versions prior to v1.5. If you are upgrading your Zen Cart v1.3.x shop to Zen Cart v1.5, DO NOT run the un-install SQL, and simply remove any previous versions of Ty Package Tracker files from your Zen Cart v1.5 store. Then install Ty Package Tracker from scratch. The good news is you will NOT need to make any database changes. The auto-installer will preserve your existing tracking data.</li>
+</ol>
+</fieldset>
+
+</div>
+</div>
+</div>
+<!--End sc3-->
+
+<!--Begin sc4-->
+<div class="tabcontent" id="sc4" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+<h3>INTEGRATION WITH OTHER MODULES</h3>
+<fieldset>
+  <legend>Super Orders v4.x</legend>
+  <p>(<strong>You MUST have Super Orders installed to use the Super Orders integration features</strong>)</p>
+<p>You will need to follow the following steps to use Ty Package Tracker v3.1.3 with Super Orders v4.x.</p>
+<ul>
+  <li>If you are running <strong>Super Orders v4.x</strong>, no patches or additional files are needed. You DO NOT UPLOAD the <strong>YOUR_ADMIN_FOLDER/orders.php</strong> file  from the Ty Package Tracker <strong>2_Modified_Core_Files</strong> folder.
+</li>
+  <li>If you'd like to add the shipper tracking number fields to the <strong>YOUR_ADMIN_FOLDER/orders.php</strong> page, go to 
+    <div class="emphasis">Admin &gt; Configuration &gt; Ty Package Tracker</div>
+    Set the "<strong>Ty Package Tracker Module Switch</strong>" to "True" to activate the Ty Package Tracker shipper tracking number fields
+    in Super Orders.</li>
+</ul>
+      </fieldset>
+<fieldset>
+<legend>Edit Order v4.x
+</legend>
+<p>(<strong>You MUST have Ty Package Tracker installed to use the Ty Package Tracker integration features</strong>)</p>
+
+<p>You will need to follow the following steps to use  Ty Package Tracker v3.1.3 with Edit Orders v4.x.</p>
+<ul>
+	<li>
+	  <div class="emphasis">If you are NOT running <strong>Super Orders & Edit Orders together</strong>, you 
+	    will need to use a tool like Winmerge or Beyond Compare to merge the <strong>YOUR_ADMIN_FOLDER/orders.php</strong> files from both Edit Orders and Ty Package Tracker.
+</div>
+	</li>
+	<li>If you'd like to add the shipper tracking number fields to the <strong>YOUR_ADMIN_FOLDER/edit_orders.php</strong> page, go to 
+      <div class="emphasis">Admin &gt; Configuration &gt; Ty Package Tracker</div>
+	   Set the "<strong>Ty Package Tracker Module Switch</strong>" to "True" to activate the Ty Package Tracker shipper tracking number fields
+	  in Edit Orders.</li>
+</ul>
+</fieldset>
+
+</div>
+</div>
+</div>
+<!--End sc4-->
+
+<!--Begin sc5-->
+<div class="tabcontent" id="sc5" style="display: block;">
+<div class="textcontent">
+<h3>CREDITS &amp; HISTORY</h3>
+<p>Based on Ty Package Tracker v2.3a<br>
+  By Ty Lieu (original author)<br>
+  <br>
+  v.3.1.3 Updated by<br>
+  C Jones (http://overthehillweb.com)</p>
+<p><br>
+  
+</p>
+<div class="regularlist">
+  <p>version 3.1.3 - 06/28/2012</p>
+<ul>
+<li>Minor bug fix to e-mail messaging functions (now sends tracking data in update e-mails)</li>
+<li>Addition of auto-install functionality (no more external SQL files needed to install/update Ty Package Tracker)</li>
+<li>Update core files</li>
+<li>Remove un-needed files</li>
+</ul>
+</div>
+<div class="regularlist">
+  <p>version 3.1.2 - 01/28/2012</p>
+<ul>
+<li>Updated to work with Zen Cart v1.5</li>
+<li>Moved some files/folders from <strong>2_Required_Core_Edits</strong> to <strong>1_Install_Files</strong> and vice versa</li>
+</ul>
+</div>
+<div class="regularlist">
+  <p>version 3.1.1 - 03/07/2011</p>
+<ul>
+<li>Minor corrections to the orders.php file so that tracking data is sent when only the status is changed but no comments are entered.</li>
+<li>Minor edits to the readme (correct more minor grammatic errors carried over from original readme)</li>
+<li>Deprecated the /YOUR_ADMIN_FOLDER/includes/functions/extra_functions/common_orders_functions.php file<br>
+(<strong>PLEASE NOTE:</strong> If you are running Super Orders v3.0.x or Edit Orders 3.0.x DO NOT DELETE THIS FILE as it is still needed by these modules. If you are NOT running 
+  Super Orders v3.0.x or Edit Orders 3.0.x you may SAFELY remove this file as it is NO LONGER USED by Ty Package Tracker v3.1.1)</li>
+</ul>
+</div>
+<div class="regularlist">
+  <p>version 3.1 - 02/20/2011</p>
+<ul>
+<li>Minor corrections to the orders.php file</li>
+<li>Minor edits to the readme (corrects some minor grammatic errors carried over from original readme)</li>
+<li>Correct folder structure for sidebox files</li>
+<li>Update install file list to reflect the correct folder structure for tracking sidebox</li>
+</ul>
+</div>
+
+<div class="regularlist">
+<p>version 3.0 - 12/12/2010</p>
+<ul>
+<li>Full integration with Zen Cart 1.3.9. Removed all of the "parallel" files used in previous versions and replaced them with properly modified Zen Cart files. Where appropriate, 
+override files in the YOUR_TEMPLATE folders have been included</li>
+<li>Integrated the Super Orders like order navigation features directly into orders.php</li>
+<li>Edit Orders and Super Orders Ty Package Tracker integration flag added (This flag "activates" Ty Package Tracker fields in Edit Orders v3.0x and Super Orders v3.0x.<br>
+Setting this flag REQUIRES that Edit Orders v3.0x and/or Super Order v3.0x ALREADY be installed.)</li>
+<li>Modified new install SQL so that the shipper data is ordered consistently</li>
+<li>Removed DHL USA from the shipper list in the SQL. (DHL USA is no longer in service)</li>
+</ul>
+</div>
+
+version 2.3a - 4/28/08<br>
+------- Change status of carrier to True. <br>
+------- Added more navigation features for admin/tracker.php<br>
+------- upgrade.sql removed.<br>
+------- Fixed bug with tracker sidebox.<br>
+------- Updated "edit" button to work with Super Orders<br><br>
+
+version - 2.2b 9/25/06<br>
+------- Moved sql files to the sql_files folder.<br>
+------- Fix bug from Required Text for Product attribute.<br><br>
+
+version 2.2a - 9/9/06<br>
+------- Rename files from ty_package_tracker.php to tracker.php.<br>
+------- Fixed the blank New Status on html e-mails.<br>
+------- Moved Tracking ID info to comment box for Customer Order History. (Admin unchanged.)<br><br>
+
+version 2.1a - 5/31/06<br>
+------- Public Release<br>
+------- Fixed Database fields.<br>
+------- Ability to delete orders.<br>
+------- Fix double status bug on Order status e-mails.<br><br>
+
+version 2.0 - 5/18/06<br>
+------- Initial release (beta version 2.0)<br><br>
+
+
+</div>
+</div>
+<!--End sc5-->
+
+<!--Begin sc6-->
+<div class="tabcontent" id="sc6" style="display: block;">
+<div class="textcontent">
+<h3>FILES</h3>
+<p><br>
+  <strong><u>Module Core Files</u></strong><br>
+  /YOUR_ADMIN_FOLDER/orders.php<br>
+  /YOUR_ADMIN_FOLDER/images/icon_track_add.png<br>
+  /YOUR_ADMIN_FOLDER/includes/languages/english/orders.php<br>
+  <br>
+  /includes/languages/english/YOUR_TEMPLATE/account_history_info.php<br>
+  /includes/languages/YOUR_TEMPLATE/english.php<br>
+  /includes/modules/pages/account_history_info/header_php.php<br>
+  /includes/modules/sideboxes/YOUR_TEMPLATE/track_orders.php<br>
+  /includes/templates/YOUR_TEMPLATE/templates/tpl_account_history_info_default.php<br>
+  /includes/templates/YOUR_TEMPLATE/sideboxes/tpl_track_orders.php
+  <br><br>
+  
+  
+  <strong><u>Deprecated Files</u></strong><br>
+  (After upgrading Ty Package Tracker, it is safe to delete these files from your store. It is NOT recommended that these files be left behind except as noted below.)<br><br>
+  /YOUR_ADMIN_FOLDER/tracker.php<br>
+  /YOUR_ADMIN_FOLDER/images/icon_track.gif<br>
+  /YOUR_ADMIN_FOLDER/includes/boxes/extra_boxes/tracker_customers_dhtml.php<br>
+  /YOUR_ADMIN_FOLDER/includes/extra_datafiles/tracker.php<br>
+  /YOUR_ADMIN_FOLDER/includes/languages/english/tracker.php<br>
+  /YOUR_ADMIN_FOLDER/includes/languages/english/images/buttons/button_track.gif<br>
+  <br>
+  /includes/extra_datafiles/tracker.php<br>
+  /includes/languages/english/tracker.php<br>
+  /includes/modules/pages/tracker/header_php.php<br>
+  /includes/modules/sideboxes/track_orders.php<br>
+  /includes/templates/template_default/templates/tpl_tracker_default.php<br>
+  /includes/templates/template_default/sideboxes/tpl_track_orders.php<br>
+</p>
+</div>
+</div>
+<!--End sc6-->
+
+<!--Begin sc7-->
+<div class="tabcontent" id="sc7" style="display: block;">
+<div class="textcontent">
+<h3>LICENSE</h3>
+<p><strong>Ty Package Tracker v3.1.2</strong> is released under the General Public License (see LICENSE.txt)</p>
+
+<p>This script is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>Always backup your shop and database before making changes.</p>
+</div>
+</div>
+<!--End sc7-->
+
+</div>
+<!--end tabcontainer-->
+<script type="text/javascript">document.getElementById('sc2').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc3').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc4').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc5').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc6').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc7').style.display = 'none';</script>
+<script type="text/javascript">ShowTabs()</script>
+<script type="text/javascript">
+// We only show the tab links if JavaScript is available/active.
+<!--
+if (document.getElementById("slidetabsmenu") != null) {
+  document.getElementById('slidetabsmenu').style.display = "block";
+}
+//-->
+</script><br>
+<br>
+<p><a href="http://validator.w3.org/check/referer" target="_blank"><img src="http://www.w3.org/Icons/valid-html401-blue.gif" alt="W3C validation logo" border="0" height="31" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" border="0" height="31" width="88"></a></p>
+<br>
+<br>
+</div>
+</div>
+</body></html>
