@@ -7,12 +7,12 @@
   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">  
   <meta http-equiv="content-language" content="en">  
   <meta name="description" content="This module add the ability for your customers and admin to tracking packages from different carriers.">
-  <title>Ty Package Tracker v3.1.3</title>
+  <title>Ty Package Tracker v3.1.4</title>
     
   <link rel="stylesheet" type="text/css" href="includes/css/stylesheet.css">  
   <script type="text/javascript" src="includes/jscript/jscript_tabs.js"></script></head><body>
 <div id="wrapper">
-<h2>Ty Package Tracker v3.1.3</h2>
+<h2>Ty Package Tracker v.3.1.4</h2>
 
 <p>Support thread: <a href="http://www.zen-cart.com/forum/showthread.php?t=36126" target="_blank">http://www.zen-cart.com/forum/showthread.php?t=36126</a><br>
 Download link: <a href="http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=167" target="_blank">http://www.zen-cart.com/index.php?main_page=product_contrib_info&amp;products_id=167</a></p>
@@ -221,9 +221,9 @@ blank fields.<br>
 -&gt; When you add a tracking number, you must either change the order
 status or add a comment in order to update the order with the tracking
 data.</li>
-<li>Is  v3.1.3 backwards compatible with older Zen Cart versions (prior to v1.5)?<br>
+<li>Is  v.3.1.4 backwards compatible with older Zen Cart versions (prior to v1.5)?<br>
 <br>
--&gt; The short answer is no. Zen Cart v1.5 is VERY different and so is Ty Package Tracker v3.1.3. There is no backwards compatibility support for Zen Cart versions prior to v1.5. If you are upgrading your Zen Cart v1.3.x shop to Zen Cart v1.5, DO NOT run the un-install SQL, and simply remove any previous versions of Ty Package Tracker files from your Zen Cart v1.5 store. Then install Ty Package Tracker from scratch. The good news is you will NOT need to make any database changes. The auto-installer will preserve your existing tracking data.</li>
+-&gt; The short answer is no. Zen Cart v1.5 is VERY different and so is Ty Package Tracker v.3.1.4. There is no backwards compatibility support for Zen Cart versions prior to v1.5. If you are upgrading your Zen Cart v1.3.x shop to Zen Cart v1.5, DO NOT run the un-install SQL, and simply remove any previous versions of Ty Package Tracker files from your Zen Cart v1.5 store. Then install Ty Package Tracker from scratch. The good news is you will NOT need to make any database changes. The auto-installer will preserve your existing tracking data.</li>
 </ol>
 </fieldset>
 
@@ -240,12 +240,12 @@ data.</li>
 <fieldset>
   <legend>Super Orders v4.x</legend>
   <p>(<strong>You MUST have Super Orders installed to use the Super Orders integration features</strong>)</p>
-<p>You will need to follow the following steps to use Ty Package Tracker v3.1.3 with Super Orders v4.x.</p>
+<p>You will need to follow the following steps to use Ty Package Tracker v.3.1.4 with Super Orders v4.x.</p>
 <ul>
-  <li>If you are running <strong>Super Orders v4.x</strong>, no patches or additional files are needed. You DO NOT UPLOAD the <strong>YOUR_ADMIN_FOLDER/orders.php</strong> file  from the Ty Package Tracker <strong>2_Modified_Core_Files</strong> folder.
+  <li>If you are running <strong>Super Orders v4.x</strong>, no patches or additional files are needed. DO NOT UPLOAD the <strong>orders.php</strong> file  from the Ty Package Tracker <strong>2_Modified_Core_Files</strong> folder.
 </li>
-  <li>If you'd like to add the shipper tracking number fields to the <strong>YOUR_ADMIN_FOLDER/orders.php</strong> page, go to 
-    <div class="emphasis">Admin &gt; Configuration &gt; Ty Package Tracker</div>
+  <li>If you'd like to add the shipper tracking number fields to the <strong>orders.php</strong> page, go to 
+  <div class="emphasis">Admin &gt; Configuration &gt; Ty Package Tracker</div>
     Set the "<strong>Ty Package Tracker Module Switch</strong>" to "True" to activate the Ty Package Tracker shipper tracking number fields
     in Super Orders.</li>
 </ul>
@@ -255,15 +255,15 @@ data.</li>
 </legend>
 <p>(<strong>You MUST have Ty Package Tracker installed to use the Ty Package Tracker integration features</strong>)</p>
 
-<p>You will need to follow the following steps to use  Ty Package Tracker v3.1.3 with Edit Orders v4.x.</p>
+<p>You will need to follow the following steps to use  Ty Package Tracker v.3.1.4 with Edit Orders v4.x.</p>
 <ul>
 	<li>
 	  <div class="emphasis">If you are NOT running <strong>Super Orders & Edit Orders together</strong>, you 
-	    will need to use a tool like Winmerge or Beyond Compare to merge the <strong>YOUR_ADMIN_FOLDER/orders.php</strong> files from both Edit Orders and Ty Package Tracker.
+	    will need to use a tool like Winmerge or Beyond Compare to merge the <strong>orders.php</strong> files from both Edit Orders and Ty Package Tracker.
 </div>
 	</li>
-	<li>If you'd like to add the shipper tracking number fields to the <strong>YOUR_ADMIN_FOLDER/edit_orders.php</strong> page, go to 
-      <div class="emphasis">Admin &gt; Configuration &gt; Ty Package Tracker</div>
+	<li>If you'd like to add the shipper tracking number fields to the <strong>edit_orders.php</strong> page, go to 
+  <div class="emphasis">Admin &gt; Configuration &gt; Ty Package Tracker</div>
 	   Set the "<strong>Ty Package Tracker Module Switch</strong>" to "True" to activate the Ty Package Tracker shipper tracking number fields
 	  in Edit Orders.</li>
 </ul>
@@ -287,12 +287,17 @@ data.</li>
   
 </p>
 <div class="regularlist">
+  <p>version 3.1.4 - 09/17/2013</p>
+<ul>
+<li>Updated tracking entry code (lhungil)</li>
+<li>Another fix to the sidebox code to HTML fix validation errors (colosports)</li>
+</ul>
+</div>
+<div class="regularlist">
   <p>version 3.1.3 - 06/28/2012</p>
 <ul>
 <li>Minor bug fix to e-mail messaging functions (now sends tracking data in update e-mails)</li>
 <li>Addition of auto-install functionality (no more external SQL files needed to install/update Ty Package Tracker)</li>
-<li>Update core files</li>
-<li>Remove un-needed files</li>
 </ul>
 </div>
 <div class="regularlist">

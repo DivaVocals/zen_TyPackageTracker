@@ -127,4 +127,5 @@ define('ENTRY_ADD_TRACK', 'Add Tracking ID');
 define('IMAGE_TRACK', 'Add Tracking ID');
 define('BUTTON_TO_LIST', 'Order List');
 define('SELECT_ORDER_LIST', 'Jump to Order: ');
+define('EMAIL_TEXT_COMMENTS_TRACKING_UPDATE', '<em>Items from your order will be shipping soon!</em>'); 
 // END TY TRACKER 1 -------------------------------------------------
