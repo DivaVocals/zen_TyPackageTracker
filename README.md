@@ -1,4 +1,4 @@
-Ty Package Tracker for Zen Cart
+Ty Package Tracker for Zen Cart v3.1.3
 ============
 
 ## This is a development version of Ty Package Tracker only
