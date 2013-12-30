@@ -72,7 +72,7 @@
     $db->Execute($sql);
 	$sql = "INSERT INTO ".DB_PREFIX."configuration VALUES (NULL, 'Ty Package Tracker Module Switch', 'TY_TRACKER', 'False', 'If you have the either Edit Orders v4.x or Super Orders v4.x installed, set this option to TRUE so that the Ty Package Tracker fields will display in Edit Orders or Super Orders<br><br><strong><font color=red>YOU MUST HAVE EDIT ORDERS v4.x OR SUPER ORDERS v4.x INSTALLED TO USE THIS FEATURE!!</font></strong><br><br>\(Activating this flag without the required mod\(s\) installed <strong>WILL CAUSE ERRORS IN YOUR STORE!!!!</strong>\)', '".$typt_configuration_id."', 175, now(), now(), NULL, 'zen_cfg_select_option(array(\'True\', \'False\'), ')";
     $db->Execute($sql);
-	$sql = "INSERT INTO ".DB_PREFIX."configuration VALUES (NULL, 'Current Ty Package Tracker Version', 'VERSION', '3.1.4', 'Version number (DO NOT MODIFY THIS VALUE)', '".$typt_configuration_id."', 180,  now(), now(), NULL, NULL)";
+	$sql = "INSERT INTO ".DB_PREFIX."configuration VALUES (NULL, 'Current Ty Package Tracker Version', 'TY_TRACKER_VERSION ', '3.1.4', 'Version number (DO NOT MODIFY THIS VALUE)', '".$typt_configuration_id."', 180,  now(), now(), NULL, NULL)";
     $db->Execute($sql);
 
 // add columns to order table
