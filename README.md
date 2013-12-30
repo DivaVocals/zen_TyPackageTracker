@@ -7,6 +7,7 @@ Changelog
 <ul>
 <li>Updated tracking entry code (lhungil)</li>
 <li>Another fix to the sidebox code to HTML fix validation errors (colosports)</li>
+<li>Moved sidebox defines from includes/languages/YOUR_TEMPLATE/english.php into a new extra_definition file (includes/languages/english/extra_definitions/YOUR_TEMPLATE/track_orders.php)</li>
 </ul>
 
 ## This is a development version of Ty Package Tracker only
