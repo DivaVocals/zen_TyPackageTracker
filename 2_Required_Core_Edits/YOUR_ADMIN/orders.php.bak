@@ -1,16 +1,13 @@
 <?php
 /**
  * @package admin
- * @copyright Copyright 2003-2013 Zen Cart Development Team
+ * @copyright Copyright 2003-2011 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version GIT: $Id: Author: DrByte  Wed Nov 6 21:04:33 2013 -0500 Modified in v1.5.2 $
+ * @version $Id: orders.php 19530 2011-09-19 13:52:37Z ajeh $
  */
 
   require('includes/application_top.php');
-
-  // unset variable which is sometimes tainted by bad plugins like magneticOne tools
-  if (isset($module)) unset($module);
 
   require(DIR_WS_CLASSES . 'currencies.php');
   $currencies = new currencies();
@@ -122,7 +119,7 @@
 			$track_id = zen_db_prepare_input($_POST['track_id']);
 
 		$check_status = $db->Execute(
-			'select customers_name, customers_email_address, orders_status,' . $check_extra_fields .
+			'SELECT customers_name, customers_email_address, orders_status,' . $check_extra_fields .
 			'date_purchased FROM `' . TABLE_ORDERS . '` WHERE orders_id = \'' . (int)$oID . '\''
 		);
 		unset($check_extra_fields);
@@ -529,13 +526,11 @@ function couponpopupWindow(url) {
               </tr>
               <tr>
                 <td class="main"><strong><?php echo TEXT_INFO_IP_ADDRESS; ?></strong></td>
-<!-- BEGIN - Add Super Orders Order IP Functionality -->
                 <?php if ($order->info['ip_address'] != '') { ?>
                 <td class="main"><?php echo $order->info['ip_address'] . '&nbsp;[<a target="_blank" href="http://www.dnsstuff.com/tools/whois.ch?ip=' . $order->info['ip_address'] . '">' . TEXT_WHOIS_LOOKUP . '</a>]'; ?></td>
                 <?php } else { ?>
                 <td class="main"><?php echo TEXT_NONE; ?></td>
                 <?php } ?>
-<!-- END - Add Super Orders Order IP Functionality -->
               </tr>
             </table></td>
             <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="2">
@@ -605,7 +600,7 @@ function couponpopupWindow(url) {
 <!-- End Customer & Payment Information //-->
 <!-- Begin PayPal or CreditCard Notification Panel //-->
 <?php
-      if (is_object($module) && method_exists($module, 'admin_notification')) {
+      if (method_exists($module, 'admin_notification')) {
 ?>
       <tr>
         <td><?php echo zen_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
