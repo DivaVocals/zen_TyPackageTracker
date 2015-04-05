@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 Ty Package Tracker for Zen Cart v3.1.4
 =======
-Ty Package Tracker for Zen Cart v3.1.3
->>>>>>> master
-============
-
 Changelog
 ---------------
 <p>Version 3.1.4 - 09/17/2013</p>
