@@ -29,10 +29,10 @@ define('TABLE_HEADING_PRODUCTS_MODEL', 'Model');
 define('TABLE_HEADING_PRODUCTS', 'Products');
 define('TABLE_HEADING_TAX', 'Tax');
 define('TABLE_HEADING_TOTAL', 'Total');
-define('TABLE_HEADING_PRICE_EXCLUDING_TAX', 'Price (ex)');
-define('TABLE_HEADING_PRICE_INCLUDING_TAX', 'Price (inc)');
-define('TABLE_HEADING_TOTAL_EXCLUDING_TAX', 'Total (ex)');
-define('TABLE_HEADING_TOTAL_INCLUDING_TAX', 'Total (inc)');
+define('TABLE_HEADING_PRICE_EXCLUDING_TAX', 'Price (excl)');
+define('TABLE_HEADING_PRICE_INCLUDING_TAX', 'Price (incl)');
+define('TABLE_HEADING_TOTAL_EXCLUDING_TAX', 'Total (excl)');
+define('TABLE_HEADING_TOTAL_INCLUDING_TAX', 'Total (incl)');
 
 define('TABLE_HEADING_CUSTOMER_NOTIFIED', 'Customer Notified');
 define('TABLE_HEADING_DATE_ADDED', 'Date Added');
@@ -54,10 +54,10 @@ define('ENTRY_TAX', 'Tax:');
 define('ENTRY_SHIPPING', 'Shipping:');
 define('ENTRY_TOTAL', 'Total:');
 define('ENTRY_DATE_PURCHASED', 'Date Purchased:');
-define('ENTRY_STATUS', 'Status:');
+define('ENTRY_STATUS', 'Update Status:');
 define('ENTRY_DATE_LAST_UPDATED', 'Date Last Updated:');
-define('ENTRY_NOTIFY_CUSTOMER', 'Notify Customer:');
-define('ENTRY_NOTIFY_COMMENTS', 'Append Comments:');
+define('ENTRY_NOTIFY_CUSTOMER', 'Notify Customer?');
+define('ENTRY_NOTIFY_COMMENTS', 'Append Comments?');
 define('ENTRY_PRINTABLE', 'Print Invoice');
 
 define('TEXT_INFO_HEADING_DELETE_ORDER', 'Delete Order');
@@ -86,7 +86,7 @@ define('ERROR_ORDER_DOES_NOT_EXIST', 'Error: Order does not exist.');
 define('SUCCESS_ORDER_UPDATED', 'Success: Order has been successfully updated.');
 define('WARNING_ORDER_NOT_UPDATED', 'Warning: Nothing to change. The order was not updated.');
 
-define('ENTRY_ORDER_ID','Invoice No. ');
+define('ENTRY_ORDER_ID','Order #');
 define('TEXT_INFO_ATTRIBUTE_FREE', '&nbsp;-&nbsp;<span class="alert">FREE</span>');
 
 define('TEXT_DOWNLOAD_TITLE', 'Order Download Status');
@@ -127,4 +127,5 @@ define('ENTRY_ADD_TRACK', 'Add Tracking ID');
 define('IMAGE_TRACK', 'Add Tracking ID');
 define('BUTTON_TO_LIST', 'Order List');
 define('SELECT_ORDER_LIST', 'Jump to Order: ');
+define('EMAIL_TEXT_COMMENTS_TRACKING_UPDATE', '<em>Items from your order will be shipping soon!</em>'); 
 // END TY TRACKER 1 -------------------------------------------------

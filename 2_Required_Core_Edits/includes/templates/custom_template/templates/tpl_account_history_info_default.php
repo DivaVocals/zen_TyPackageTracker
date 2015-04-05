@@ -106,9 +106,9 @@ if (sizeof($statusArray)) {
   foreach ($statusArray as $statuses) {
 ?>
     <tr>
+<!-- Begin Ty Package Tracker -->
         <td class="myAccountStatusComments"><?php echo zen_date_short($statuses['date_added']); ?></td>
         <td class="myAccountStatusComments"><?php echo $statuses['orders_status_name']; ?></td>
-<!-- Begin Ty Package Tracker -->
           <?php
 			$display_track_id = '';
 			$display_track_id .= (empty($statuses['track_id1']) ? '' : "<b>" . CARRIER_NAME_1 . "</b>" . ":&nbsp;&nbsp;<a href=" . CARRIER_LINK_1 . nl2br(zen_output_string_protected($statuses['track_id1'])) . ' target="_blank">' . nl2br(zen_output_string_protected($statuses['track_id1'])) . "</a>" );

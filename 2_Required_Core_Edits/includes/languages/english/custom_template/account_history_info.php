@@ -32,11 +32,12 @@ define('HEADING_PAYMENT_METHOD', 'Payment Method');
 define('HEADING_ORDER_HISTORY', 'Order Status History &amp; Comments');
 define('TEXT_NO_COMMENTS_AVAILABLE', 'No comments available.');
 define('TABLE_HEADING_STATUS_DATE', 'Date');
-// Begin Ty Package Tracker
-define('TABLE_HEADING_TRACKING_ID', 'Tracking ID');
-// End Ty Package Tracker
 define('TABLE_HEADING_STATUS_ORDER_STATUS', 'Order Status');
 define('TABLE_HEADING_STATUS_COMMENTS', 'Comments');
 define('QUANTITY_SUFFIX', '&nbsp;ea.  ');
 define('ORDER_HEADING_DIVIDER', '&nbsp;-&nbsp;');
 define('TEXT_OPTION_DIVIDER', '&nbsp;-&nbsp;');
+
+// Begin Ty Package Tracker
+define('TABLE_HEADING_TRACKING_ID', 'Tracking ID');
+// End Ty Package Tracker

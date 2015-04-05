@@ -1,5 +1,18 @@
+<<<<<<< HEAD
+Ty Package Tracker for Zen Cart v3.1.4
+=======
 Ty Package Tracker for Zen Cart v3.1.3
+>>>>>>> master
 ============
+
+Changelog
+---------------
+<p>Version 3.1.4 - 09/17/2013</p>
+<ul>
+<li>Updated tracking entry code (lhungil)</li>
+<li>Another fix to the sidebox code to HTML fix validation errors (colosports)</li>
+<li>Moved sidebox defines from includes/languages/YOUR_TEMPLATE/english.php into a new extra_definition file (includes/languages/english/extra_definitions/YOUR_TEMPLATE/track_orders.php)</li>
+</ul>
 
 ## This is a development version of Ty Package Tracker only
 #### If you are looking to install the latest version from zencart please visit [http://www.zen-cart.com/downloads.php?do=file&id=75](http://www.zen-cart.com/downloads.php?do=file&id=75)
