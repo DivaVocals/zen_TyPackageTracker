@@ -18,7 +18,7 @@
         $sort = $original_config->fields['sort_order'];
 
     }else{
-        /* Find max sort order in the configuation group table -- add 2 to this value to create the Ty Package Tracker configuration group ID */
+        /* Find max sort order in the configuration group table -- add 2 to this value to create the Ty Package Tracker configuration group ID */
         $sql = "SELECT (MAX(sort_order)+2) as sort FROM ".TABLE_CONFIGURATION_GROUP;
         $result = $db->Execute($sql);
         $sort = $result->fields['sort'];
@@ -28,7 +28,7 @@
         $db->Execute($sql);
    }
 
-    /* Find configuation group ID of Ty Package Tracker */
+    /* Find configuration group ID of Ty Package Tracker */
     $sql = "SELECT configuration_group_id FROM ".TABLE_CONFIGURATION_GROUP." WHERE configuration_group_title='".$typt_menu_title."' LIMIT 1";
     $result = $db->Execute($sql);
         $typt_configuration_id = $result->fields['configuration_group_id'];
