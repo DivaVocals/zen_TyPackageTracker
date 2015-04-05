@@ -119,13 +119,23 @@ define('TABLE_HEADING_CUSTOMER_COMMENTS', 'Customer<br />Comments');
 define('TEXT_COMMENTS_YES', 'Customer Comments - YES');
 define('TEXT_COMMENTS_NO', 'Customer Comments - NO');
 
+// BEGIN EDIT ORDERS  ----------------------------------------------
+define('TEXT_MAILTO', 'mailto');
+define('TEXT_STORE_EMAIL', 'web');
+define('TEXT_WHOIS_LOOKUP', 'whois');
+
+define('BUTTON_TO_LIST', 'Order List');
+define('SELECT_ORDER_LIST', 'Jump to Order:');
+
+// END EDIT ORDERS  ----------------------------------------------
+
 // TY TRACKER 1 BEGIN  ----------------------------------------------
 define('HEADING_TITLE_ORDER_DETAILS', 'Order # ');
 define('TABLE_HEADING_TRACKING_ID', 'Tracking ID');
 define('TABLE_HEADING_CARRIER_NAME', 'Carrier');
 define('ENTRY_ADD_TRACK', 'Add Tracking ID');
 define('IMAGE_TRACK', 'Add Tracking ID');
-define('BUTTON_TO_LIST', 'Order List');
-define('SELECT_ORDER_LIST', 'Jump to Order: ');
+//define('BUTTON_TO_LIST', 'Order List');
+//define('SELECT_ORDER_LIST', 'Jump to Order: ');
 define('EMAIL_TEXT_COMMENTS_TRACKING_UPDATE', '<em>Items from your order will be shipping soon!</em>'); 
 // END TY TRACKER 1 -------------------------------------------------
